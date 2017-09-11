@@ -4,7 +4,7 @@
 - To assess your practical understanding of object-oriented concepts
 - To assess your originality
 
-You have to design and implement a simple restaurant management system which depicts the typical actors and systems involved in the operation of a restaurant.
+You have to design and implement a restaurant management system which depicts the typical actors and systems involved in the operation of a restaurant.
 
 Note that though you obviously can take the easy route and search online for a solution, this assignment is really about displaying your own analytical and technical skills, so the more individuality you show, the better shall be your prospects.
 
