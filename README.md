@@ -20,6 +20,28 @@ In this section items are classified  into different section such as
 4.Drinks
 ArrayList is used to add different items to the menu
 Every section is associated with index number
+  
+
+ORDER CLASS:
+
+In this section ArrayList is used to 
+1.get items
+2.add items
+3.remove items
+4.get size 
+5.clear order
+6.ordernumber
+Finally getserver method is used to assign a random server using switch case
+
+REGISTER CLASS
+
+In this section after placing an order
+bill calculations are provided in this section
+bill calcualtion includes tax(GST)
+a subtotal
+and final amount to be paid by the customer
+checkPayment method is used to check the amount is equal to total or less than total
+suitable operations are performed
 
 
 
