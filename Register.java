@@ -57,7 +57,7 @@ public String checkPayment(double payment)
 	}
 	else if(payment>total)
 	{
-		return "Here is your change sir: "+numForm.format(payment=total);
+		return "Here is your change sir: "+numForm.format(payment-total);
 	}
 	else
 	{
