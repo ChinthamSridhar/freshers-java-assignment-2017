@@ -36,6 +36,7 @@ int l=0;
 		else if(itemsec=='D')
 		{
 			System.out.println(getAllDeserts());
+			System.out.println("please enter id of the item");
 			Item myItem=menu.getDesert(sc.nextInt());
 			order.addItem(myItem);
 			System.out.println(order.getItem(l++));
@@ -43,6 +44,7 @@ int l=0;
 		else if(itemsec=='M')
 		{
 			System.out.println(getAllMainCourse());
+			System.out.println("please enter id of the item");
 			Item myItem=menu.getMainCourse(sc.nextInt());
 			order.addItem(myItem);
 			System.out.println(order.getItem(l++));
@@ -50,6 +52,7 @@ int l=0;
 		else if(itemsec=='R')
 		{
 			System.out.println(getAllDrinks());
+			System.out.println("please enter id of the item");
 			Item myItem=menu.getDrinks(sc.nextInt());
 			order.addItem(myItem);
 			System.out.println(order.getItem(l++));
@@ -60,20 +63,31 @@ int l=0;
 		}
 		System.out.println("Enter 'O' to exit or");
 	}
+	System.out.println("Your order is served by");
+	System.out.println();
+	String server=order.getServer();
+	System.out.println(server);
+	System.out.println();
+	System.out.println("Your order is ready");
+	System.out.println();
 	Register reg=new Register(order);
 	reg.calcSubtotal();
 	reg.calcGst();
-	System.out.println("amount");
-	System.out.println(reg.getSubtotal());
-		System.out.println("Gst");
-	System.out.println(reg.getGST());
-		System.out.println("Total");
-	System.out.println(reg.calcTotal());
-	System.out.println("Enter the amount");
+	System.out.println("Your bill");
+	System.out.println();
+	System.out.println("AMOUNT\t"+reg.getSubtotal());
+	System.out.println("GST:\t"+reg.getGST());
+	System.out.println("TOTAL:\t"+reg.calcTotal());
+	System.out.println("enter the amount given by customer ");
 	double payment=sc.nextDouble();
 	System.out.println(reg.checkPayment(payment));
 	reg.clearPayments();
 	reg.toString();
+	System.out.println();
+	System.out.println("please provide your valuable feedback");
+	String feedback=sc.next();
+	System.out.println("Thank you for visting ");
+	
 }
 }
 

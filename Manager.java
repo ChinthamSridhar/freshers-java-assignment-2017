@@ -22,7 +22,6 @@ if(answer.equalsIgnoreCase("full"))
 else
 {
 System.out.println("Which section? [Staters] [Deserts] [Maincourse] [Drinks]");
-}
 String sec=sc.next().toLowerCase();
 //check for answer
 while(!(sec.equalsIgnoreCase("staters")|| sec.equalsIgnoreCase("deserts")|| sec.equalsIgnoreCase("maincourse")))
@@ -45,6 +44,7 @@ else if(sec.equals("maincourse"))
 else if(sec.equals("drinks"))
 {
 	System.out.println(getAllDrinks());
+}
 }
 }
 }

@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 public class Menu
 {
-	private ArrayList<Item> staters= new ArrayList<Item>();
-	private ArrayList<Item> deserts=new ArrayList<Item>();
-	private ArrayList<Item> maincourse=new ArrayList<Item>();
-	private ArrayList<Item> drinks=new ArrayList<Item>();
+	private static ArrayList<Item> staters= new ArrayList<Item>();
+	private  static ArrayList<Item> deserts=new ArrayList<Item>();
+	private  static ArrayList<Item> maincourse=new ArrayList<Item>();
+	private  static  ArrayList<Item> drinks=new ArrayList<Item>();
 //constructor
 public Menu()
 {
@@ -21,7 +21,7 @@ public int getStatersSize()
 	return staters.size();
 }
 //returns all the staters
-public String getAllStaters()
+public static String getAllStaters()
 {
 	String aMenu="";
 	aMenu += "STATERS:\n";
@@ -41,7 +41,7 @@ public int getDesertsSize()
 {
 	return deserts.size();
 }
-public String getAllDeserts()
+public static String getAllDeserts()
 {
 	String aMenu="";
 	aMenu += "DESERTS:\n";
@@ -61,7 +61,7 @@ public int getMainCourseSize()
 {
 	return maincourse.size();
 }
-public String getAllMainCourse()
+public static String getAllMainCourse()
 {
 	String aMenu="";
 	aMenu += "MAINCOURSE:\n";
@@ -81,7 +81,7 @@ public int getDrinksSize()
 {
 	return drinks.size();
 }
-public String getAllDrinks()
+public static String getAllDrinks()
 {
 	String aMenu="";
 	aMenu += "DRINKS:\n";

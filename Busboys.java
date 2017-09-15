@@ -8,6 +8,11 @@ void display()
 Scanner sc=new Scanner(System.in);
 System.out.println("would you like to have mineral water or normal water");
 String str=sc.nextLine();
+while(!(str.equals("mineral"))||(str.equals("normal")))
+{
+	System.out.println("Invalid input.please enter again:");
+	str=sc.nextLine();
+}
 if(str.equals(str1))
 {
 System.out.println("here is your mineral water");

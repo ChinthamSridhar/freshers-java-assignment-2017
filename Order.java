@@ -58,25 +58,25 @@ public String getServer()
 	switch(num)
 	{
 		case 1:
-		return "A";
+		return "Sachin";
 		case 2:
-		return "B";
+		return "Dhoni";
 		case 3:
-		return "C";
+		return "Raina";
 		case 4:
-		return "D";
+		return "Virat";
 		case 5:
-		return "E";
+		return "Sewag";
 		case 6:
-		return  "F";
+		return  "Dilshan";
 		case 7:
-		return  "G";
+		return  "Ricky";
 		case 8:
-		return  "H";
+		return  "Ram";
 		case 9:
-		return  "I";
+		return  "Harsha";
 		case 10:
-		return  "J";
+		return  "Tarun";
 		default:
 		return " sorry no server available";
 	}

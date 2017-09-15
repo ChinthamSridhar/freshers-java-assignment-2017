@@ -5,7 +5,7 @@ public class Host
 	public void gethost()
 	{
 System.out.println("WELCOME TO THE RESTAURANT");
-System.out.println(" please tell the membersize");
+System.out.println("please tell the membersize");
 Scanner sc=new Scanner(System.in);
 int members=sc.nextInt();
 if(members==1||members==2||members==3)
